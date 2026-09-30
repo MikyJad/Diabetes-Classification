@@ -1,0 +1,74 @@
+{
+  "AdaBoost": {
+    "params": {
+      "learning_rate": 0.14670817273054054,
+      "n_estimators": 150,
+      "max_depth": 3
+    },
+    "cv_f1": 0.457529477967176,
+    "outer_cv_f1": 0.45514334942716195,
+    "outer_cv_f1_std": 0.004229345628544807,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/adaboost_brfss.json.gz"
+  },
+  "XGBoost": {
+    "params": {
+      "max_depth": 2,
+      "learning_rate": 0.10927833120940882,
+      "n_estimators": 100,
+      "min_child_weight": 3,
+      "subsample": 0.6,
+      "colsample_bytree": 0.9,
+      "gamma": 2.25,
+      "reg_alpha": 1.8030115691529054,
+      "reg_lambda": 0.03379723505416351
+    },
+    "cv_f1": 0.4600059080747917,
+    "outer_cv_f1": 0.45921919458512966,
+    "outer_cv_f1_std": 0.00510799512077765,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/xgboost_brfss.json.gz"
+  },
+  "LightGBM": {
+    "params": {
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.017951780022626575,
+      "n_estimators": 150,
+      "min_child_samples": 30,
+      "subsample": 1.0,
+      "colsample_bytree": 0.6,
+      "reg_alpha": 0.00039431175500722975,
+      "reg_lambda": 0.01300836612548882
+    },
+    "cv_f1": 0.4586832905591476,
+    "outer_cv_f1": 0.4587861418010403,
+    "outer_cv_f1_std": 0.003593206755008534,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/lightgbm_brfss.json.gz"
+  },
+  "CatBoost": {
+    "params": {
+      "depth": 7,
+      "learning_rate": 0.010323063694529117,
+      "iterations": 100,
+      "l2_leaf_reg": 1.1430065920328951,
+      "random_strength": 0.02458571707074806,
+      "bagging_temperature": 4.619644229071693,
+      "border_count": 128
+    },
+    "cv_f1": 0.45768500447302374,
+    "outer_cv_f1": 0.45798650076170394,
+    "outer_cv_f1_std": 0.005417431601971636,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/catboost_brfss.json.gz"
+  }
+}

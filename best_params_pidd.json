@@ -1,0 +1,74 @@
+{
+  "AdaBoost": {
+    "params": {
+      "learning_rate": 0.3343700288154141,
+      "n_estimators": 200,
+      "max_depth": 1
+    },
+    "cv_f1": 0.7053187244724181,
+    "outer_cv_f1": 0.67855770609319,
+    "outer_cv_f1_std": 0.04664292388873884,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/adaboost_pidd.json.gz"
+  },
+  "XGBoost": {
+    "params": {
+      "max_depth": 5,
+      "learning_rate": 0.026638917203111404,
+      "n_estimators": 150,
+      "min_child_weight": 10,
+      "subsample": 0.7,
+      "colsample_bytree": 0.9,
+      "gamma": 4.0,
+      "reg_alpha": 1.9465204306303465,
+      "reg_lambda": 6.074704952365206
+    },
+    "cv_f1": 0.7134027057472033,
+    "outer_cv_f1": 0.6920322978861748,
+    "outer_cv_f1_std": 0.041600562413380116,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/xgboost_pidd.json.gz"
+  },
+  "LightGBM": {
+    "params": {
+      "max_depth": 3,
+      "num_leaves": 5,
+      "learning_rate": 0.010648876019840006,
+      "n_estimators": 250,
+      "min_child_samples": 30,
+      "subsample": 0.8,
+      "colsample_bytree": 0.7,
+      "reg_alpha": 3.8181553209680352,
+      "reg_lambda": 10.617858184924213
+    },
+    "cv_f1": 0.7132201958153057,
+    "outer_cv_f1": 0.7055326327487544,
+    "outer_cv_f1_std": 0.024299436334113595,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/lightgbm_pidd.json.gz"
+  },
+  "CatBoost": {
+    "params": {
+      "depth": 3,
+      "learning_rate": 0.012921416991841055,
+      "iterations": 100,
+      "l2_leaf_reg": 0.03849724092175949,
+      "random_strength": 0.012964028258465703,
+      "bagging_temperature": 0.4013264933599974,
+      "border_count": 128
+    },
+    "cv_f1": 0.7047298459240168,
+    "outer_cv_f1": 0.70730104109991,
+    "outer_cv_f1_std": 0.027976447847796744,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/catboost_pidd.json.gz"
+  }
+}

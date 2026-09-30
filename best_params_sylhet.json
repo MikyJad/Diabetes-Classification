@@ -1,0 +1,75 @@
+{
+  "AdaBoost": {
+    "params": {
+      "learning_rate": 0.47327692428581564,
+      "n_estimators": 300,
+      "max_depth": 5
+    },
+    "cv_f1": 0.936215857345269,
+    "outer_cv_f1": 0.9241105179566483,
+    "outer_cv_f1_std": 0.04525360212254105,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/adaboost_sylhet.json.gz"
+  },
+  "XGBoost": {
+    "params": {
+      "max_depth": 4,
+      "learning_rate": 0.08135428807971634,
+      "n_estimators": 100,
+      "min_child_weight": 3,
+      "subsample": 0.7,
+      "colsample_bytree": 0.7,
+      "gamma": 0.0,
+      "reg_alpha": 0.03702571041835466,
+      "reg_lambda": 0.0013076787602647754
+    },
+    "cv_f1": 0.9378531636229479,
+    "outer_cv_f1": 0.9216494687869401,
+    "outer_cv_f1_std": 0.03141041215392623,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/xgboost_sylhet.json.gz"
+  },
+  "LightGBM": {
+    "params": {
+      "max_depth": 7,
+      "num_leaves": 75,
+      "learning_rate": 0.25458626939437495,
+      "n_estimators": 350,
+      "min_child_samples": 10,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "min_split_gain": 0.0,
+      "reg_alpha": 0.3978469288905681,
+      "reg_lambda": 1.1179715288639696
+    },
+    "cv_f1": 0.9320354725396168,
+    "outer_cv_f1": 0.9019437990258637,
+    "outer_cv_f1_std": 0.027350437448898018,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/lightgbm_sylhet.json.gz"
+  },
+  "CatBoost": {
+    "params": {
+      "depth": 8,
+      "learning_rate": 0.04283359224824574,
+      "iterations": 250,
+      "l2_leaf_reg": 0.016946844112597143,
+      "random_strength": 5.320351093024138,
+      "bagging_temperature": 3.3813839169024087,
+      "border_count": 32
+    },
+    "cv_f1": 0.953977725200531,
+    "outer_cv_f1": 0.9374055836305452,
+    "outer_cv_f1_std": 0.041387676709972676,
+    "evaluation_protocol": "nested-oof-v2",
+    "outer_n_splits": 5,
+    "inner_n_splits": 5,
+    "cv_result_file": "cv_results/catboost_sylhet.json.gz"
+  }
+}
